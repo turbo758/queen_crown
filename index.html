@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen's Crown Fashion Studio</title>
+
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">Queen's Crown Fashion Studio</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a id="cart-icon-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1></h1>
+            <p>Discover exclusive collections at Queen's Crown Fashion Studio.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Featured Collection</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="data:image/jpeg;base64,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" alt="Salwar Suit">
+                        <div class="product-info">
+                            <h3>Salwar Suit</h3>
+                            <span class="price">4900.00</span>
+                            <button class="add-to-cart" onclick="addToCart('Salwar Suit', 450.00)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0412/0002/5751/files/one_1024x1024_10e1233e-387b-49ae-b31b-f3af3ae93d7c_480x480.webp?v=1661577226" alt="Long Skirt">
+                        <div class="product-info">
+                            <h3>Long Skirt</h3>
+                            <span class="price">4190.00</span>
+                            <button class="add-to-cart" onclick="addToCart('Long Skirt', 190.00)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0412/0002/5751/files/three_1024x1024_ac62c8fa-8807-449c-a369-e0a14ab875a3_480x480.webp?v=1661577363" alt="Anarkali Suit">
+                        <div class="product-info">
+                            <h3>Anarkali Suit</h3>
+                            <span class="price">4320.00</span>
+                            <button class="add-to-cart" onclick="addToCart('Anarkali Suit', 120.00)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0412/0002/5751/files/four_1024x1024_348e3331-4720-4522-aa6e-e5862b15ccd1_480x480.webp?v=1661577457" alt="Ethnic Shrug">
+                        <div class="product-info">
+                            <h3>Ethnic Shrug</h3>
+                            <span class="price">2210.00</span>
+                            <button class="add-to-cart" onclick="addToCart('Ethnic Shrug', 210.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Queen's Crown</h2>
+                <p>
+                    Welcome to Queen's Crown Fashion Studio, where every piece is designed to make you feel like royalty. Our mission is to blend timeless elegance with modern sophistication, creating unique apparel and accessories for the queen you are.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+            </div>
+            <p>&copy; 2025 Queen's Crown Fashion Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="added-to-cart-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Added to Cart!</h3>
+            <p id="modal-product-name"></p>
+            <p>You've added a new item to your royal collection.</p>
+            <button class="modal-close-btn" data-modal-id="added-to-cart-modal">Continue Shopping</button>
+        </div>
+    </div>
+
+    <div id="shopping-cart-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Your Royal Cart</h3>
+            <ul id="cart-items-list"></ul>
+            <div class="cart-total">
+                Total: $<span id="cart-total">0.00</span>
+            </div>
+            <div class="cart-buttons">
+                <button class="modal-close-btn" data-modal-id="shopping-cart-modal">Close</button>
+                <button id="purchase-btn" class="purchase-btn">Purchase Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="purchase-thanks-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Thank You!</h3>
+            <p>Your royal order has been placed successfully.</p>
+            <button class="modal-close-btn" data-modal-id="purchase-thanks-modal">Close</button>
+        </div>
+    </div>
+
+    <!-- Link External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
